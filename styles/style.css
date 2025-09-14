@@ -1,0 +1,126 @@
+/* GOOGLE FONTS LINKING */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+/* CUSTOM CSS CONSTANTS */
+:root {
+  --main-color: #0066ff;
+  --text-color: #1e242c;
+  --other-color: #414d60;
+  --second-color: #002b6b;
+
+  --bg-color: #fff;
+  --bg2-color: #fafafa;
+
+  --header-font: 1.56rem;
+  --h1-font: 5rem;
+  --h2-font: 3.5rem;
+  --p-font: 1rem;
+  --font-family2: "Poppins", sans-serif;
+
+  --f1-weight: 700;
+  --f2-weight: 600;
+  --f3-weight: 500;
+
+  --transition: all 0.6s ease;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  padding: 80px 13% 70px;
+}
+
+/* HEADER STYLING */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 30px 13%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  z-index: 1000;
+}
+
+.logo p {
+  font-size: var(--header-font);
+  color: var(--bg-color);
+  font-weight: var(--header-weight);
+}
+
+.logo span {
+  font-weight: var(--header2-weight);
+  font-family: var(--font-family2);
+  color: var(--main-color);
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.nav ul a {
+  color: var(--text-color);
+  transition: var(--transition);
+  font-size: var(--p-font);
+  font-weight: var(--h1-font);
+}
+
+.nav ul a:hover {
+  color: var(--main-color);
+}
+
+.register {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.register a {
+  color: var(--bg-color);
+  font-size: var(--p-font);
+  font-weight: var(--f2-weight);
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  border: 2px solid var(--bg-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+}
+
+.h-icon {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-content: center;
+  color: var(--text-color);
+  background: var(--bg-color);
+  border-radius: 100vmax;
+}
+
+.menu-icon {
+  color: var(--bg-color);
+  font-size: 2.81rem;
+  z-index: 10001;
+  display: none;
+}
